@@ -1,0 +1,10 @@
+<div class="card grid column">
+  <div class="wrapper">
+    <img class="recipe-image" src="{{ image }}" alt="alternative text" />
+    <p class="recipe-name"><ng-content></ng-content></p>
+  </div>
+  <div class="wrapper">
+    <p class="portion-size">{{ size }}P</p>
+    <app-button (click)="deleteItem(id)">X</app-button>
+  </div>
+</div>

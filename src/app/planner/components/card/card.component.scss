@@ -1,0 +1,31 @@
+.card {
+  align-items: center;
+  background-color: var(--clr-secondary);
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  align-items: center;
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: column;
+}
+
+.recipe-image {
+  height: 150px;
+  object-fit: cover;
+  width: 460px;
+}
+
+.recipe-name {
+  color: var(--clr-primary);
+  font-size: 36px;
+}
+
+.portion-size {
+  color: var(--clr-tertiary);
+  font-size: 100px;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <app-card
+    *ngFor="let meal of meals"
+    name="{{ meal.name }}"
+    size="{{ meal.portionSize }}"
+    image="{{ meal.image }}"
+    id="{{ meal.id }}"
+    (delete)="remove($event)"
+  >
+    {{ meal.name }}
+  </app-card>
+  <app-button (click)="add()">+</app-button>
+</div>
