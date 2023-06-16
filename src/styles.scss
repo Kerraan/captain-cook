@@ -1,5 +1,5 @@
 :root {
-  --clr-primary: rgba(105, 105, 105);
+  --clr-primary: rgb(105, 105, 105);
   --clr-primaryLight: rgba(196, 196, 196);
   --clr-secondary: rgba(239, 239, 239);
   --clr-tertiary: rgba(255, 255, 255);
@@ -10,4 +10,8 @@
   margin: 0;
   font-family: "Roboto";
   font-weight: 400;
+}
+
+html {
+  position: relative;
 }

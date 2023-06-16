@@ -1,10 +1,88 @@
 .navigation {
-width: 100%;
-background-color: var(--clr-secondary);
-padding: 1rem 0 1rem 2rem
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background-color: var(--clr-secondary);
+  padding-left: 2rem;
+  align-items: center;
 }
 
 .logo {
-	font-size: 40px;
-	color: var(--clr-primary);
+  font-size: 40px;
+  color: var(--clr-primary);
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  justify-self: end;
+}
+
+.isdark {
+  background-color: var(--clr-primaryLight);
+}
+
+button {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: grid;
+  height: 28px;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+  width: 34px;
+  z-index: 50;
+}
+
+.line {
+  background-color: var(--clr-primary);
+  border-radius: 2px;
+  height: 4px;
+  width: 34px;
+
+  &:before {
+    background-color: var(--clr-primary);
+    border-radius: 2px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    transform: translate(-17px, -10px);
+    width: 34px;
+  }
+
+  &:after {
+    background-color: var(--clr-primary);
+    border-radius: 2px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    transform: translate(-17px, 10px);
+    width: 34px;
+  }
+}
+
+.iswhite {
+  background-color: var(--clr-tertiary);
+
+  &:before {
+    background-color: var(--clr-tertiary);
+  }
+
+  &:after {
+    background-color: var(--clr-tertiary);
+  }
+}
+
+.drop-down {
+  display: none;
+}
+
+.isactive {
+  display: block;
 }

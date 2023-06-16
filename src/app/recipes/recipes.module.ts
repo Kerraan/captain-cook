@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
+import { RecipesComponent } from './components/recipes/recipes.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [RecipesComponent],
   imports: [CommonModule, SharedModule],
+  exports: [RecipesComponent],
 })
 export class RecipesModule {}

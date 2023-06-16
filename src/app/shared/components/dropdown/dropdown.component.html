@@ -1,0 +1,9 @@
+<div class="backdrop" (click)="onClick()" aria-hidden="true"></div>
+<div class="drop-down">
+  <ul>
+    <ng-container>
+      <li><ng-content select="[item1]"></ng-content></li>
+      <li><ng-content select="[item2]"></ng-content></li>
+    </ng-container>
+  </ul>
+</div>

@@ -1,0 +1,36 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.232);
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.drop-down {
+  border: 1px solid #efefef;
+  box-shadow: 0px 0px 29px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  right: 0;
+  top: 90px;
+  z-index: 60;
+}
+
+ul {
+  background-color: var(--clr-tertiary);
+  color: var(--clr-primary);
+  list-style-type: none;
+  padding: 0;
+  width: 350px;
+
+  li:first-of-type {
+    border-bottom: 1px solid var(--clr-primaryLight);
+  }
+
+  li {
+    padding: 30px;
+    font-size: 32px;
+  }
+}
